@@ -11,6 +11,6 @@ const body = document.querySelector('body')
 
     const display = body.style.display
     body.style.display = display === 'none' ? 'block' : 'none'
-    location.href = '/signin.html'
+    location.href = '/index.html'
     alert('para entrar novamente faça login')
 }

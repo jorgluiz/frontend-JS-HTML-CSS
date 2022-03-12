@@ -32,7 +32,7 @@ let objValidator = {
          fetch(prontuarioUrl, options)
          .then(response => {
 
-             if(response.ok === true) location.href = '/signin.html'
+             if(response.ok === true) location.href = '/index.html'
      
              if(response.status === 401){
      
