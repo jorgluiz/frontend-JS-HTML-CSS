@@ -1,0 +1,8 @@
+th,
+td{
+    border: solid 1px;
+}
+
+.td-width{
+    width: 20%;
+}

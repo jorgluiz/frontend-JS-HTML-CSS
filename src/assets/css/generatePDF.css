@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'Ubuntu',;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* button */
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: solid 1px; */
+    /* background: red; */
+}
+
+.cpfCurrent{
+    margin: 10px 25px;
+}
+
+p{
+    font-size: 0.9rem;
+    font-size: 15px;
+    /* border: solid 1px;  */
+}
+
+.inline-block-nasc,
+.inline-block-sexo{
+    display: inline-block;
+    margin: 0 120px 0 0;
+}
+.inline-block-cpf,
+.inline-block-rg,
+.inline-block-emissao{
+    display: inline-block;
+    margin: 0 150px 0 0;
+}
+.inline-block-endereco,
+.inline-block-uf{
+    display: inline-block;
+    margin: 0 120px 0 0;
+}
+.inline-block-cidade,
+.inline-block-bairro{
+    display: inline-block;
+    margin: 0 275px 0 0;
+}
+
+.border{
+    border-bottom: solid 1px;
+}
+
+table{
+    width: 500px;
+}
+
+tr,
+th,
+td{
+    border: solid 1px;
+    height: 40px;
+}
+
+
+/* button go-back */
+.go-back{
+    display: flex;
+    position: absolute;
+    top: 30px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML TO PDF</title>
+    <link rel="stylesheet" href="./src/assets/css/generatepdf.css">
+</head>
+
+<body >
+  <div class="container">
+      
+    <div class="center">
+        <input class="go-back" type="button" value="VOLTAR" onclick="window.location = '/searche.html' ">
+
+        <input class="cpfCurrent" type="search" placeholder="Digite o CPF">
+        <input type="button" value="IMPRIMIR" onclick="imprimitPDF()">
+    </div>
+
+
+    <div id="generatePDF">
+        <header>
+            <h1 class="border">PRONTUÁRIO MÉDICO</h1>
+            <address>
+                <p> Associação de Articulação </p>
+                <p> Social dos Moradores </p>
+                <p> Comerciantes do Bairro de Peixinhos - AASCMBP</p>
+                <p> CNPJ: 19.007.800/0001-62 </p>
+            </address>
+            <span>
+                <!--<img alt="it" src="base64imagecodehere" width="150">-->
+            </span>
+        </header>
+            <address>
+                <h4 class="border">DADOS DO PACIENTE</h4>
+                <p> Nome: </p>
+                <p class="inline-block-nasc"> Data de Nascimento: <p class="inline-block-sexo"> Sexo:</p></p>
+                <p> Nome da mãe: </p>
+                <p> Cartão do sus: </p>
+                <p class="inline-block-cpf"> CPF: <p class="inline-block-rg"> RG: </p> <p class="inline-block-emissao"> Data de emissão:</p></p>
+                <p class="inline-block-endereco"> Endereço: <p class="inline-block-uf">UF:</p> </p>
+                <p class="inline-block-cidade"> Cidade: <p class="inline-block-bairro">Bairro: </p></p>
+                <p> CEP: </p>
+                <p> Fone: </p>
+            </address>
+            <h4 class="border">INFORMAÇÕES DO PACIENTE</h4>
+            <p><span></span></p>
+        </div>
+  </div>
+    <script src="./src/assets/js/generatePDF.js"></script>
+</body>
+</html>
