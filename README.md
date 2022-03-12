@@ -40,6 +40,19 @@
  <h6> segue o passo a passo </h6>
   
  ![deploy hereku](https://user-images.githubusercontent.com/35885897/158031516-fb510cd9-c84e-44a7-9894-24b1021ca6e8.png)
+  
+  
+  
+  
+  
+<h1>Outra forma de deploy com static</h1>
+<h3>buildpack projetado para hospedar conteúdo estático.</h3>
+<h6>buildpacks:set https://github.com/heroku/heroku-buildpack-static.git</h6>
+E adicione uma indicação de qual diretório contém seus ativos estáticos:static.json
+
+{"root":"public"}
+  
+referência: Deploy static HTML, CSS and JS using Express <a href="https://www.youtube.com/watch?v=FnMglnp4rKI&ab_channel=sparxsys">Deploy static </a>
 
   
   
