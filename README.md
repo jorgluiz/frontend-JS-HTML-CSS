@@ -25,3 +25,21 @@
   <h6>Veja com o arquivo PHP ele detecta mas não o compose.json</h6>
  
 ![detect](https://user-images.githubusercontent.com/35885897/158030912-603148be-ee00-4b92-8f59-2737c183cd31.png)
+  
+  
+<h2>depois de criar os arquivos, agora vamos fazer o deploy do frontend</h3>
+  
+  <h3>1) vá no site da HEROKU</h3>
+
+ <h6>Agora clique em New e depois Create new app</h6>
+ <h6>Coloque um nome único</h6>
+
+<h3>2) depois do projeto criado e com o nome vamos fazer o deploy</h3>
+  
+  
+ <h6> segue o passo a passo </h6>
+  
+ ![deploy hereku](https://user-images.githubusercontent.com/35885897/158031516-fb510cd9-c84e-44a7-9894-24b1021ca6e8.png)
+
+  
+  
