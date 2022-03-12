@@ -27,7 +27,7 @@ let objValidator = {
              })
          }
  
-         const prontuarioUrl = 'http://localhost:3000/signup'
+         const prontuarioUrl = 'https://backend-flavio.herokuapp.com/signup'
  
          fetch(prontuarioUrl, options)
          .then(response => {
