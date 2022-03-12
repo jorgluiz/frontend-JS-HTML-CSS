@@ -54,7 +54,7 @@ form.addEventListener('submit', async e => {
         })
     }
 
-    const prontuarioUrl = 'http://localhost:3000/prontuarios'
+    const prontuarioUrl = 'https://backend-flavio.herokuapp.com/prontuarios'
 
     fetch(prontuarioUrl, options)
         .then(() => {

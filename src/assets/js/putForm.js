@@ -27,7 +27,7 @@ const form = {
         const current = document.querySelector('.input-cpf')
         let cpfcurrent = current.value
     
-        const url = `http://localhost:3000/prontuarios/buscas/${cpfcurrent}`
+        const url = `https://backend-flavio.herokuapp.com/prontuarios/buscas/${cpfcurrent}`
     
         fetch(url, {
             method: "put",

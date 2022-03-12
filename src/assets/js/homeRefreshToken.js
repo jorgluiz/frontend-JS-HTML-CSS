@@ -1,6 +1,6 @@
 
 
-const urlRefreshToken = 'http://localhost:3000/refresh-token'
+const urlRefreshToken = 'https://backend-flavio.herokuapp.com/refresh-token'
 
 fetch(urlRefreshToken, {
     headers: { 
