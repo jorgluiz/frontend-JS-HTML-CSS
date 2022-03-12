@@ -1,2 +1,1 @@
-# abrir outra página 
-  - window.open("home.html")
+<h3>Deploy Heroku (Frontend)</h3>
