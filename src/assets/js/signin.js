@@ -24,7 +24,7 @@ let objValidator = {
                 // const refresh = res.data.refreshToken
                 // localStorage.setItem('refresh', refresh)
 
-                location.href = '/home' 
+                location.href = '/home.html' 
             })
             .catch(err => err)
 

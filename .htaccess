@@ -1,6 +1,0 @@
-#remove html file extension https://frontend-flavio.herokuapp.com/page.html
-# to https://frontend-flavio.herokuapp.com/page
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-
