@@ -24,7 +24,10 @@ let objValidator = {
                 document.querySelector('.content').style.display = 'none';
                 document.querySelector('.box-load').style.display = 'block'
 
-                location.href = '/home.html' 
+                setTimeout(() => {
+                    location.href = '/home.html' 
+                }, 2000)
+                
             })
             .catch(err => err)
 
