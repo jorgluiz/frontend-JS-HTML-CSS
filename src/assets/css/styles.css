@@ -212,7 +212,8 @@ span{
 
 @media screen and (min-width: 200px) and (max-width: 640px){
     body{
-        width: 100vh;
+        /* height: 100vh; */
+        width: 100vw;
     }
 
 .flex-row-form{
@@ -225,7 +226,7 @@ width: 100vh;
 }
 
 header{
-   width: 100%;
+   width: 100vh;
    justify-content: space-between;
 
 }
