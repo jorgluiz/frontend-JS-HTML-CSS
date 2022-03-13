@@ -14,12 +14,12 @@ body{
     /* height: 100vh; */
 }
 
-form{
-    width: 300px;
+.form-signin{
+	position: relative;
+	width: 300px;
     margin: 150px auto;
     text-align: center;
 }
-
 input{
     display: block;
     margin: 10px auto;

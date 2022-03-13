@@ -21,8 +21,8 @@ let objValidator = {
                 console.log(token)
                 localStorage.setItem('token', token)
 
-                // const refresh = res.data.refreshToken
-                // localStorage.setItem('refresh', refresh)
+                document.querySelector('.content').style.display = 'none';
+                document.querySelector('.box-load').style.display = 'block'
 
                 location.href = '/home.html' 
             })

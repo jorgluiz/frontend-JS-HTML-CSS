@@ -1,0 +1,25 @@
+.box-load{
+    position: absolute;
+    display: flex;
+    margin: 114px 590px;
+    display: none;
+    /* background-color: #e20202; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.pre{
+    width: 60px;
+    height: 60px;
+
+    border: rgb(0, 0, 0, 0.18) solid;
+    border-left-color: rgba(9,9,121,1);
+    border-radius: 50%;
+
+    animation: loading 1.2s linear infinite;
+
+}
+
+@keyframes loading {
+    to {transform: rotate(360deg);}
+}

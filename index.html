@@ -8,21 +8,27 @@
     <title>signin</title>
     <link rel="stylesheet" href="./src/assets/css/signin.css">
     <link rel="stylesheet" href="./src/assets/csserror/signin-error.css">
+    <link rel="stylesheet" href="./src/assets/css/load.css">
 
      <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
 </head>
 
 <body>
-  <div class="border-auth">
-    <form class="form-signin">
+  <div class="box-load">
+    <div class="pre"></div>
+  </div>
+  <div class="content">
+    <div class="border-auth center">
+      <form class="form-signin">
         <h3>Login</h3>
         <input type="email" name="email" id="signin-email" placeholder="E-MAIL" data-rules="required|email">
         <input type="password" name="password" id="signin-password" placeholder="PASSWORD" data-rules="required|min=4">
         <input class="myButton input" type="submit" id="signin-btn-submit" value="Entrar">
         <p>Não tem conta? <a href="/signup.html">Registre-se</a></p>
-    </form>
+      </form>
+    </div>
   </div>
- <h1 class="error"></h1>
+  <h1 class="error"></h1>
     
     <script src="./src/assets/js/signin.js"></script>
 </body>
