@@ -226,7 +226,12 @@ width: 100vh;
 
 header{
    width: 100%;
+   justify-content: start;
 
+}
+
+nav ul{
+    padding: 0;
 }
 
 /* .exit{
