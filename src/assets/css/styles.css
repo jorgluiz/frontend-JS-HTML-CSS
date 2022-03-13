@@ -234,9 +234,9 @@ nav ul{
     padding: 10px;
 }
 
-/* .exit{
-display: none;
-} */
+.exit{
+    padding: 10px;
+}
 
 .input-fone,
 .input-cpf,
