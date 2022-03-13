@@ -210,7 +210,7 @@ height: 110px;
 display: flex;
 flex-direction: column;
 margin: 20px 0 0 0;
-width: 100vw;
+width: 100vh;
 }
 .exit{
 display: none;
@@ -248,18 +248,12 @@ width: 380px;
 }
 
 .flex4-form{
- padding: 0;
- margin: 0;
-}   
-
+padding: 0;
+margin: 10px 10px;
+    }
+    
 .count{
 display: none;
-}
-
-.input-submit{
-
-/* margin-left: 270px; */
-/* top: 1033px; */
 }
 
 footer{
@@ -269,14 +263,19 @@ background-color: rgba(0,0,0, 0.8);
 top: 1100px;
 
 }
-span{
-display: flex;
-justify-content: center;
-}
-}
 
+}
 span{
 color: aliceblue;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 
