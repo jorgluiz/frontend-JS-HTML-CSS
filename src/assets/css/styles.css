@@ -203,6 +203,11 @@ height: 110px;
 
 }
 
+span{
+    color: aliceblue;
+    }
+    
+
  /* responsive init */
 
 @media (max-width: 600px){
@@ -264,18 +269,16 @@ top: 1100px;
 
 }
 
-}
-span{
-color: aliceblue;
-}
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 
