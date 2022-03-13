@@ -211,6 +211,10 @@ span{
  /* responsive init */
 
 @media (max-width: 600px){
+    body{
+        width: 100vh;
+    }
+
 .flex-row-form{
 display: flex;
 flex-direction: column;
@@ -219,6 +223,11 @@ align-items: center;
 margin: 20px 0 0 0;
 width: 100vh;
 }
+
+header{
+    height: 100hw;
+}
+
 .exit{
 display: none;
 }
