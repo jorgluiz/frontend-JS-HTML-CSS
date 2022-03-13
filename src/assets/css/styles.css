@@ -226,12 +226,12 @@ width: 100vh;
 
 header{
    width: 100%;
-   justify-content: start;
+   justify-content: space-between;
 
 }
 
 nav ul{
-    padding: 0;
+    padding: 10px;
 }
 
 /* .exit{
