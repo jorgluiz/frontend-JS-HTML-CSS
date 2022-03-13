@@ -208,9 +208,9 @@ span{
     }
     
 
- /* responsive init */
+ /* ### responsive init ### */
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 200px) and (max-width: 640px){
     body{
         width: 100vh;
     }
@@ -292,3 +292,6 @@ top: 1100px;
     
 
 }
+
+
+
