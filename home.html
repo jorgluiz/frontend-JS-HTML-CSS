@@ -6,18 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
 	<link rel="stylesheet" href="./src/assets/css/styles.css">
-	<link rel="stylesheet" href="./src/assets/css/menu.css">
-</head>
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
 <body>
 	<div class="container">
 		<header>
 			<nav>
-				<ul class="menu">
+				<ul class="home">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #ffff;transform: msFilter"><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path></svg> <!--  icone -->
 					<li><a href="./home.html">Home</a></li>
 					<li><a href="./searche.html">Buscas</a></li>
@@ -25,97 +23,92 @@
 					<li><a href="./generatePDF.html">prontuarios</a></li>
 				</ul>
 			</nav>
+<aside class="aside-padding">
+	<!-- <a href="#" class="config">configuração</a> -->
+	<input class="exit" type="button" value="Sair" onclick="exit()">
+</aside>
+</header>
 
-			<aside class="aside-padding">
-				<!-- <a href="#" class="config">configuração</a> -->
-				<input class="exit" type="button" value="Sair" onclick="exit()">
-			</aside>
-		</header>
+<form class="flex-row-form reset-form" name="formSend">
 
-		<main>
+	<div class="flex1-form">
+		<label for="name_full">Nome completo:</label>
+		<input class="input-name" type="text" name="name" required placeholder="Nome Completo">
 
-			<form class="flex-row-form reset-form" name="formSend">
+		<label for="nascimento">Data de nascimento:</label>
+		<input class="input-nasc" type="text" name="nascimento" required placeholder="Data Nascimento">
 
-				<div class="flex1-form">
-					<label for="name_full">Nome completo:</label>
-					<input class="input-name" type="text" name="name" required placeholder="Nome Completo">
+		<label for="name_mae">Nome da mãe:</label>
+		<input class="input-mae" type="text" name="mae" required placeholder="Nome da mãe">
 
-					<label for="nascimento">Data de nascimento:</label>
-					<input class="input-nasc" type="text" name="nascimento" required placeholder="Data Nascimento">
+		<label for="cartao do sus">Cartão do sus:</label>
+		<input class="input-sus" type="text" name="sus" required placeholder="Cartão do SUS">
 
-					<label for="name_mae">Nome da mãe:</label>
-					<input class="input-mae" type="text" name="mae" required placeholder="Nome da mãe">
+		<label for="cep">CEP:</label>
+		<input class="input-cep" type="search" name="cep" required placeholder="CEP" maxlength="9" id="cep">
 
-					<label for="cartao do sus">Cartão do sus:</label>
-					<input class="input-sus" type="text" name="sus" required placeholder="Cartão do SUS">
+		<label for="bairro">Bairro:</label>
+		<input class="input-bairro" type="text" name="bairro" required placeholder="Bairro" id="bairro">
 
-					<label for="cep">CEP:</label>
-					<input class="input-cep" type="search" name="cep" required placeholder="CEP" maxlength="9" id="cep">
-
-					<label for="bairro">Bairro:</label>
-					<input class="input-bairro" type="text" name="bairro" required placeholder="Bairro" id="bairro">
-
-					<label for="endereco">Endereço:</label>
-					<input class="input-endereco" type="text" name="endereco" required placeholder="Endereço"
-						id="logradouro">
-				</div>
-
-				<div class="flex2-form">
-					<label for="sexo">Sexo:</label>
-					<select class="input-sexo" name="sexo" type="text">
-						<option value="Masculino">M</option>
-						<option value="Feminino">F</option>
-					</select>
-
-
-					<label for="data-emissao">Data de emissão:</label>
-					<input class="input-emissao" type="text" name="dataemissao" required placeholder="Data emissão">
-
-					<label for="rg">RG:</label>
-					<input class="input-rg" type="text" name="rg" required placeholder="Número endentidade">
-
-					<label for="cpf">CPF:</label>
-					<input class="input-cpf" type="text" name="cpf" required placeholder="CPF">
-
-					<label for="cidade">Cidade:</label>
-					<input class="input-cidade" type="text" name="cidade" required placeholder="Cidade" id="localidade">
-
-					<label for="uf">UF:</label>
-					<input class="input-uf" type="text" name="uf" required placeholder="UF" id="uf">
-
-					<label for="fone">Fone:</label>
-					<input class="input-fone" type="text" name="fone" required placeholder="Fone">
-				</div>
-
-				<div class="flex3-form">
-					<label for="obs">Descrição:</label>
-					<textarea class="input-descricao" name="descricao" cols="30" rows="17" required placeholder="descrição do paciente"></textarea>
-				</div>
-
-				<div class="flex4-form">
-					<input type="submit" class="input-submit" value="ENVIAR">
-				</div>
-			</form>
-
-			<p class="count"></p>
-			<div id="result"></div>
-		</main>
-
-		<footer>
-			<span>Copyright <strong>Jorge Luiz</strong> © 2021-2022</span>
-		</footer>
+		<label for="endereco">Endereço:</label>
+		<input class="input-endereco" type="text" name="endereco" required placeholder="Endereço" id="logradouro">
 	</div>
 
-	<!-- <script src="./src/assets/js/refreshToken.js"></script> -->
-	<!-- <script src="./src/assets/js/logout.js"></script> -->
-	<!-- <script src="./src/assets/js/obterLocalStorage.js"></script> -->
-	<script src="./src/assets/js/homeRefreshToken.js"></script>
+	<div class="flex2-form">
+		<label for="sexo">Sexo:</label>
+		<select class="input-sexo" name="sexo" type="text">
+			<option value="Masculino">M</option>
+			<option value="Feminino">F</option>
+		</select>
 
-	<script src="./src/assets/js/allCount.js"></script>
-	<script src="./src/assets/js/cepFill.js"></script>
-	<script src="./src/assets/js/onSubmit.js"></script>
-	<script src="./src/assets/js/exitPage.js"></script>
-	<script src="./src/assets/js/logged.js"></script>
+
+		<label for="data-emissao">Data de emissão:</label>
+		<input class="input-emissao" type="text" name="dataemissao" required placeholder="Data emissão">
+
+		<label for="rg">RG:</label>
+		<input class="input-rg" type="text" name="rg" required placeholder="Número endentidade">
+
+		<label for="cpf">CPF:</label>
+		<input class="input-cpf" type="text" name="cpf" required placeholder="CPF">
+
+		<label for="cidade">Cidade:</label>
+		<input class="input-cidade" type="text" name="cidade" required placeholder="Cidade" id="localidade">
+
+		<label for="uf">UF:</label>
+		<input class="input-uf" type="text" name="uf" required placeholder="UF" id="uf">
+
+		<label for="fone">Fone:</label>
+		<input class="input-fone" type="text" name="fone" required placeholder="Fone">
+	</div>
+
+	<div class="flex3-form">
+		<label for="obs">Descrição:</label>
+		<textarea class="input-descricao" name="descricao" cols="30" rows="17" required
+			placeholder="descrição do paciente"></textarea>
+	</div>
+
+	<div class="flex4-form">
+		<input type="submit" class="input-submit" value="ENVIAR">
+	</div>
+</form>
+
+<p class="count"></p>
+
+<footer>
+	<span>Copyright <strong>Jorge Luiz</strong> © 2021-2022</span>
+</footer>
+
+</div>
+
+
+
+<script src="./src/assets/js/homeRefreshToken.js"></script>
+
+<script src="./src/assets/js/allCount.js"></script>
+<script src="./src/assets/js/cepFill.js"></script>
+<script src="./src/assets/js/onSubmit.js"></script>
+<script src="./src/assets/js/exitPage.js"></script>
+<script src="./src/assets/js/logged.js"></script>
 </body>
 
 </html>
