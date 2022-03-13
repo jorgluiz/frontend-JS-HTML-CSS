@@ -225,7 +225,8 @@ width: 100vh;
 }
 
 header{
-    height: 100hw;
+   width: 100%;
+
 }
 
 .exit{
