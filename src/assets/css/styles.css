@@ -1,18 +1,15 @@
-:root{
-    --lightgray: lightgray;
-    --blue: ???;
-    --gray: ???;
-    
-    /* ### exemplos como utilizar as variaveis do root
-    background-color: var(--orange);
-     */
-
-    }
-
-/* font importing */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); */
+
+:root{
+--lightgray: lightgray;
+--blue: ???;
+--gray: ???;
+
+/* ### exemplos como utilizar as variaveis do root
+background-color: var(--orange);
+*/
+
+}
 
 *{
 box-sizing: border-box;
@@ -22,13 +19,14 @@ margin: 0;
 /* outline: none; */
 }
 
+html,
 body{
-min-height: 100%;
-background: var(--lightgray); 
+height: 100vh;
+background: var(--lightgray);
+/* min-height: 100%; */
 
-
- /*  overflow-x: hidden; tirar barra de rolagem na horizontal */
-/*overflow-y: hidden;  tirar barra de rolagem na vertical */
+/* overflow-x: hidden; tirar barra de rolagem na horizontal */
+/*overflow-y: hidden; tirar barra de rolagem na vertical */
 }
 
 .container{
@@ -40,7 +38,6 @@ header{
 display: flex;
 justify-content: space-between;
 height: 60px;
-width: 100vw;
 align-items: center;
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(6,70,161,1) 0%, rgba(9,9,121,1) 100%);
 box-shadow: 10px 5px 8px rgba(0,0,0,0.4);
@@ -53,7 +50,7 @@ font-size: 20px;
 }
 
 
-ul li a {
+nav ul li a {
 padding: 0 7px;
 color: #fff;
 text-decoration: none;
@@ -72,8 +69,6 @@ padding: 0 40px;
 aside a {
 color: aliceblue;
 }
-
-
 
 /* link de configuração ### desativado ###*/
 .config{
@@ -108,7 +103,7 @@ transition: 0.5s all 100ms;
 background: rgb(255, 0, 0, 0.6);
 }
 
-/* form */
+/* ### form ### */
 .flex-row-form{
 display: flex;
 justify-content: center;
@@ -125,94 +120,55 @@ display: flex;
 flex-direction: column;
 padding: 20px 20px 0 0;
 }
-.flex3-form{
-display: flex;
-flex-direction: column;
-padding: 20px;
+
+.flex3-submit{
+/* display: flex; */
+margin-top: 140px;
 }
 
-.flex4-form{
-display: flex;
-margin: 275px 0 0 0;
+input,
+textarea{
+outline: 0;
 }
 
-
-
+/* todos os inputs, vão ficar com essa largura  ( width: 360px )*/
 .input-name{
 width: 360px;
 }
 
-.input-cep{
-width: 360px;
-}
-
 .input-sexo{
-width: 43px;
-}
-
-#sexo{
-width: 110px;
-}
-
-
-.input-uf{
-width: 110px;
-}
-
-.input-emissao{
-width: 127px;
-}
-
-
-.input-cep,
-.input-cidade,
-.input-sus,
-.input-rg{
-width: 170px;
+width: 39px;
 }
 
 .input-submit{
 display: inline;
 width: 100px;
 height: 30px;
-border-radius: 10px;
-}
-
-textarea,
-input{
-outline: 0;
-/* background-color: #d1d1d1; */
-}
-
-.count{
-margin: 0;
-padding: 0;
-margin: auto;
+border-radius: 5px;
 }
 
 footer{
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: rgba(0,0,0, 0.8) ;
-margin-top: 80px;
-height: 110px;
+position: absolute;
+height: 55px;
+width: 100%;
+margin: 0 0 -80px 0;
+bottom: 0;
+background-color: rgba(0,0,0, 0.9) ;
+/* position: absolute; */
+/* bottom: 0; */
 }
 
-span{
-    color: aliceblue;
-    }
-    
+footer span{
+color: aliceblue;
+}
 
- /* ### responsive init ### */
+
+/* ### responsive init ### */
 
 @media screen and (min-width: 200px) and (max-width: 640px){
-    body{
-        min-height: 100vh;
-        /* min-width: 100px; */
-       
-    }
-
 .flex-row-form{
 display: flex;
 flex-direction: column;
@@ -222,40 +178,34 @@ margin: 20px 0 0 0;
 }
 
 header{
-   /* width: 100%; */
-   justify-content: space-between;
+/* width: 100%; */
+justify-content: space-between;
 
 }
 
 svg{
-    display: none;
+display: none;
 }
 
 .generatePDF{
-    display: none;
+display: none;
 }
 
 nav ul{
-    padding: 0 0 0 0;
+padding: 0 0 0 0;
 }
 
 .aside-padding{
-    padding: 0 0 0 0;
+padding: 0 0 0 0;
 }
 
-.input-fone,
-.input-cpf,
-.input-cidade,
-.input-emissao,
 .input-endereco,
 .input-bairro,
 .input-nasc,
 .input-mae,
 .input-name,
 .input-cep,
-.input-cidade,
-.input-sus,
-.input-rg{
+.input-sus{
 width: 360px;
 }
 .input-uf{
@@ -277,8 +227,8 @@ width: 380px;
 .flex4-form{
 padding: 0;
 margin: 10px 10px;
-    }
-    
+}
+
 .count{
 display: none;
 }
@@ -291,16 +241,14 @@ top: 1100px;
 
 }
 
-    footer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-
+footer{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin: 0;
+padding: 0;
 }
 
 
+}
