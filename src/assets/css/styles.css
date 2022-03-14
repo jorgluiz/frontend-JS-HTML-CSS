@@ -136,10 +136,6 @@ outline: 0;
 
 /* todos os inputs, vão ficar com essa largura  ( width: 360px )*/
 
-.input-name{
-width: 360px;
-}
-
 .input-sexo{
 width: 39px;
 }
@@ -181,10 +177,10 @@ color: aliceblue;
 .flex-row-form{
 display: flex;
 flex-direction: column;
+/* margin: 20px 0 0 0; */
 /* align-items: center; */
 /* justify-self: center; */
-margin: 20px 0 0 0;
-width: 100%;
+/* width: 100%; */
 }
 
 header{
@@ -228,26 +224,20 @@ top: 870px;
 
 }
 
-
-
-
-@media (max-width: 385px){
-    
-    .input-fone,
-    .input-uf,
-    .input-cidade,
-    .input-cpf,
-    .input-rg,
-    .input-emissao,
-    .input-sexo,
-    .input-descricao,
-    .input-endereco,
-    .input-bairro,
-    .input-cep,
-    .input-sus,
-    .input-mae,
-    .input-nasc,
-    .input-name{
-        width: 250px;
-    }
-}
+/* .input-fone,
+.input-uf,
+.input-cidade,
+.input-cpf,
+.input-rg,
+.input-emissao,
+.input-sexo,
+.input-descricao,
+.input-endereco,
+.input-bairro,
+.input-cep,
+.input-sus,
+.input-mae,
+.input-nasc,
+.input-name{
+    width: 300px;
+} */
