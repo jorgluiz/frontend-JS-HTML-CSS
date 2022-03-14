@@ -150,6 +150,11 @@ height: 30px;
 border-radius: 5px;
 }
 
+.count{
+    display: flex;
+    justify-content: center;
+}
+
 footer{
 display: flex;
 align-items: center;
