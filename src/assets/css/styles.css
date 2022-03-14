@@ -54,6 +54,10 @@ nav ul li a {
 padding: 0 7px;
 color: #fff;
 text-decoration: none;
+
+}
+
+nav ul li{
 list-style: none;
 }
 
@@ -121,8 +125,8 @@ flex-direction: column;
 padding: 20px 20px 0 0;
 }
 
-.submit-flex3{
-margin-top: 139px;
+.input-submit{
+margin-top: 140px;
 }
 
 input,
