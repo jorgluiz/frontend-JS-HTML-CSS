@@ -19,17 +19,28 @@
 <body>
 	<div class="container">
 		<header>
-			<nav>
-				<ul class="home">
-					<li><a href="./home.html">Home</a></li>
-					<li><a href="./searche.html">Buscas</a></li>
-					<li><a class="generatePDF" href="./generatePDF.html">prontuarios</a></li>
-				</ul>
-			</nav>
-			<aside class="aside-padding">
-				<!-- <a href="#" class="config">configuração</a> -->
-				<input class="exit" type="button" value="Sair" onclick="exit()">
-			</aside>
+			<div class="container-header">
+
+				<!-- menu hamburguer -->
+				<div class="menu-section on">
+					<div class="menu-toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="./home.html">Home</a></li>
+							<li><a href="./searche.html">Buscas</a></li>
+							<li><a class="generatePDF" href="./generatePDF.html">prontuarios</a></li>
+						</ul>
+					</nav>
+				</div>
+				<aside class="aside-padding">
+					<!-- <a href="#" class="config">configuração</a> -->
+					<input class="exit" type="button" value="Sair" onclick="exit()">
+				</aside>
+			</div>
 		</header>
 
 		<form class="flex-row-form reset-form" name="formSend">
