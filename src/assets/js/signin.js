@@ -28,7 +28,7 @@ let objValidator = {
 
                 setTimeout(() => {
                     location.href = '/home.html' 
-                }, 3000)
+                }, 2000)
                 
             })
             .catch(err => err)
