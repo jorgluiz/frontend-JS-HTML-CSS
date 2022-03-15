@@ -23,8 +23,8 @@ cpfCurrent.addEventListener('blur', () => {
 
                 output += `
                     <header>
-                        <h1 class="border">PRONTUÁRIO MÉDICO</h1>
-                        <address>
+                    <address>
+                    <h1 class="border">PRONTUÁRIO MÉDICO</h1>
                             <p> Associação de Articulação </p>
                             <p> Social dos Moradores </p>
                             <p> Comerciantes do Bairro de Peixinhos - AASCMBP</p>
@@ -35,7 +35,7 @@ cpfCurrent.addEventListener('blur', () => {
                         </span>
                     </header>
                         <address>
-                            <h4 class="border">DADOS DO PACIENTE</h4>
+                            <h3 class="border padding-top">DADOS DO PACIENTE</h3>
                             <p> Nome: ${newData.name} </p>
                             <p class="inline-block-nasc Data de Nascimento: ${newData.nascimento}> </p>
                             <p class="inline-block-sexo"> Sexo: ${newData.sexo}</p>
@@ -50,9 +50,9 @@ cpfCurrent.addEventListener('blur', () => {
                             <p class="inline-block-cidade"> Cidade: ${newData.cidade}</p>
                             <p class="inline-block-bairro">Bairro:${newData.bairro} </p>
                             <p> Fone: ${newData.fone} </p>
+                            <h3 class="border padding-top">INFORMAÇÕES DO PACIENTE</h3>
+                            <p><span>${newData.descricao}</span></p>
                         </address>
-                        <h4 class="border">INFORMAÇÕES DO PACIENTE</h4>
-                        <p><span>${newData.descricao}</span></p>
                     </div>
             `;
             });
