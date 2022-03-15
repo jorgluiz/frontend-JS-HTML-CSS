@@ -37,13 +37,18 @@ cpfCurrent.addEventListener('blur', () => {
                         <address>
                             <h4 class="border">DADOS DO PACIENTE</h4>
                             <p> Nome: ${newData.name} </p>
-                            <p class="inline-block-nasc"> Data de Nascimento: ${newData.nascimento} <p class="inline-block-sexo"> Sexo: ${newData.sexo}</p></p>
+                            <p class="inline-block-nasc Data de Nascimento: ${newData.nascimento}> </p>
+                            <p class="inline-block-sexo"> Sexo: ${newData.sexo}</p>
                             <p> Nome da mãe: ${newData.mae}</p>
-                            <p> Cartão do sus:${newData.sus} </p>
-                            <p class="inline-block-cpf"> CPF: ${newData.cpf} <p class="inline-block-rg"> RG: ${newData.rg} </p> <p class="inline-block-emissao"> Data de emissão: ${newData.dataemissao} </p></p>
-                            <p class="inline-block-endereco"> Endereço: ${newData.endereco} <p class="inline-block-uf">UF: ${newData.uf}</p> </p>
-                            <p class="inline-block-cidade"> Cidade: ${newData.cidade} <p class="inline-block-bairro">Bairro:${newData.bairro} </p></p>
+                            <p> Cartão do sus: ${newData.sus} </p>
+                            <p class="inline-block-cpf"> CPF: ${newData.cpf} </p>
+                            <p class="inline-block-rg"> RG: ${newData.rg} </p>
+                            <p class="inline-block-emissao"> Data de emissão: ${newData.dataemissao} </p>
                             <p> CEP: ${newData.cep} </p>
+                            <p class="inline-block-endereco"> Endereço: ${newData.endereco}  </p>
+                            <p class="inline-block-uf">UF: ${newData.uf} </p>
+                            <p class="inline-block-cidade"> Cidade: ${newData.cidade}</p>
+                            <p class="inline-block-bairro">Bairro:${newData.bairro} </p>
                             <p> Fone: ${newData.fone} </p>
                         </address>
                         <h4 class="border">INFORMAÇÕES DO PACIENTE</h4>

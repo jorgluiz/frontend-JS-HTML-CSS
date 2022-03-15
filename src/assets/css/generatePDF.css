@@ -1,46 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 *{
     box-sizing: border-box;
 
 }
 
-html,
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif, 'Roboto';
-}
-
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     
 }
-
 
 /* button */
 .center{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    /* border: solid 1px; */
-    /* background: red; */
+    width: 100%;
 }
 
+/* button go-back */
+.go-back{
+    background: linear-gradient( rgba(0,212,255,1) 0%, rgba(6,70,161,1) 0%, rgba(9,9,121,1) 100%);
+    margin: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* button pesquisa */
 .cpfCurrent{
-    margin: 10px 25px;
+    margin: 25px;
+}
+
+.imprimir{
+    background: linear-gradient( rgba(0,212,255,1) 0%, rgba(6,70,161,1) 0%, rgba(9,9,121,1) 100%);
+    margin: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.border{
+    border-bottom: solid 2px;
+    width: 380px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 800px;
+    
+    }
+    
+   h1{
+       margin-left: 25px;
+   }
+
+   address{
+    margin-left: 25px;
+}
+
+.padd{
+    margin: 0 0 10px 0;
+}
+
+.info{
+    margin: 10px 0 0 0;
 }
 
 p{
-    font-size: 0.9rem;
-    font-size: 15px;
-    /* border: solid 1px;  */
+    padding: 3px 0;
 }
 
-.inline-block-nasc,
+
+
+
+/* .inline-block-nasc,
 .inline-block-sexo{
     display: inline-block;
     margin: 0 120px 0 0;
@@ -60,25 +95,4 @@ p{
 .inline-block-bairro{
     display: inline-block;
     margin: 0 275px 0 0;
-}
-
-.border{
-    border-bottom: solid 1px;
-}
-
-table{
-    width: 500px;
-}
-
-tr,
-th,
-td{
-    border: solid 1px;
-    height: 40px;
-}
-
-
-/* button go-back */
-.go-back{
-    margin: 0 50px;
-}
+} */
