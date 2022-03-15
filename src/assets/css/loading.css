@@ -1,14 +1,15 @@
 .box-load{
     position: absolute;
-    display: flex;
-    margin: 114px 590px;
+    width: 100vw;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+    align-items: center;
     display: none;
-    /* background-color: #e20202; */
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .pre{
+    margin: 250px auto;
     width: 60px;
     height: 60px;
 
