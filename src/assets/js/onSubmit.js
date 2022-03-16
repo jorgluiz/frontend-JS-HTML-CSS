@@ -1,9 +1,12 @@
 // FUNÇÃO SUBMIT enviar form para o servidor
-
 let form = document.querySelector('.flex-row-form')
 
 form.addEventListener('submit', async e => {
     e.preventDefault()
+
+    let cpf = document.querySelector('.input-cpf').value
+    let newCPF = cpf.replace(/[^0-9]/g, "")
+    newCPF
 
 
     const formValue = {
@@ -17,7 +20,7 @@ form.addEventListener('submit', async e => {
         sexo: document.querySelector('.input-sexo'),
         dataemissao: document.querySelector('.input-emissao'),
         rg: document.querySelector('.input-rg'),
-        cpf: document.querySelector('.input-cpf'),
+        cpf: newCPF,
         cidade: document.querySelector('.input-cidade'),
         uf: document.querySelector('.input-uf'),
         fone: document.querySelector('.input-fone'),
@@ -46,7 +49,7 @@ form.addEventListener('submit', async e => {
             sexo: formValue.sexo.value,
             dataemissao: formValue.dataemissao.value,
             rg: formValue.rg.value,
-            cpf: formValue.cpf.value.trim(),
+            cpf: formValue.cpf.trim(),
             cidade: formValue.cidade.value,
             uf: formValue.uf.value,
             fone: formValue.fone.value,

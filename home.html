@@ -10,6 +10,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="./src/assets/css/reset.css">
 	<link rel="stylesheet" href="./src/assets/css/styles.css">
+	<link rel="stylesheet" href="./src/assets/csserror/cpf-error.css">
 
 	<!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
 
@@ -50,32 +51,31 @@
 		<form class="flex-row-form reset-form" name="formSend">
 			<div class="flex1-form">
 				<label for="name_full">Nome completo:</label>
-				<input class="input-name" type="text" name="name" required placeholder="Nome Completo">
+				<input class="input-name" type="text" name="name"  placeholder="Nome Completo" required>
 
 				<label for="nascimento">Data de nascimento:</label>
-				<input class="input-nasc" type="text" name="nascimento" required placeholder="Data Nascimento">
+				<input class="input-nasc" type="text" name="nascimento"  placeholder="Data Nascimento" required>
 
 				<label for="name_mae">Nome da mãe:</label>
-				<input class="input-mae" type="text" name="mae" required placeholder="Nome da mãe">
+				<input class="input-mae" type="text" name="mae"  placeholder="Nome da mãe" required>
 
 				<label for="cartao do sus">Cartão do sus:</label>
-				<input class="input-sus" type="text" name="sus" required placeholder="Cartão do SUS">
+				<input class="input-sus" type="text" name="sus"  placeholder="Cartão do SUS" required>
 
 				<label for="cep">CEP:</label>
-				<input class="input-cep" type="search" name="cep" required placeholder="CEP" maxlength="9" id="cep">
+				<input class="input-cep" type="search" name="cep"  placeholder="CEP" maxlength="9" id="cep" required>
 
 				<label for="bairro">Bairro:</label>
-				<input class="input-bairro" type="text" name="bairro" required placeholder="Bairro" id="bairro">
+				<input class="input-bairro" type="text" name="bairro"  placeholder="Bairro" id="bairro" required>
 
 				<label for="endereco">Endereço:</label>
-				<input class="input-endereco" type="text" name="endereco" required placeholder="Endereço"
-					id="logradouro">
+				<input class="input-endereco" type="text" name="endereco"  placeholder="Endereço" id="logradouro" required>
 
 
 				<!-- textarea -->
 				<label for="obs">Descrição:</label>
-				<textarea class="input-descricao" name="descricao" cols="30" rows="10" required
-					placeholder="descrição do paciente" style="resize: none"></textarea>
+				<textarea class="input-descricao" name="descricao" cols="30" rows="10" 
+					placeholder="descrição do paciente" style="resize: none" required></textarea>
 			</div>
 
 			<div class="flex2-form">
@@ -87,22 +87,23 @@
 
 
 				<label for="data-emissao">Data de emissão:</label>
-				<input class="input-emissao" type="text" name="dataemissao" required placeholder="Data emissão">
+				<input class="input-emissao" type="text" name="dataemissao"  placeholder="Data emissão" required>
 
 				<label for="rg">RG:</label>
-				<input class="input-rg" type="text" name="rg" required placeholder="Número endentidade">
+				<input class="input-rg" type="text" name="rg"  placeholder="Número endentidade" required>
 
 				<label for="cpf">CPF:</label>
-				<input class="input-cpf" type="text" name="cpf" required placeholder="CPF">
+				<input class="input-cpf" type="text" name="cpf" placeholder="CPF">
+				<div class="cpf-error"></div>
 
 				<label for="cidade">Cidade:</label>
-				<input class="input-cidade" type="text" name="cidade" required placeholder="Cidade" id="localidade">
+				<input class="input-cidade" type="text" name="cidade"  placeholder="Cidade" id="localidade" required>
 
 				<label for="uf">UF:</label>
-				<input class="input-uf" type="text" name="uf" required placeholder="UF" id="uf">
+				<input class="input-uf" type="text" name="uf"  placeholder="UF" id="uf" required>
 
 				<label for="fone">Fone:</label>
-				<input class="input-fone" type="text" name="fone" required placeholder="Fone">
+				<input class="input-fone" type="text" name="fone"  placeholder="Fone" required>
 
 				<!-- button submit -->
 				<input class="input-submit" type="submit" value="ENVIAR">

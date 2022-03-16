@@ -81,7 +81,7 @@ let objValidator = {
                     case 'required':
                         if (input.value == '') {
                             return 'este campo é obrigatório'
-                        }
+                        }   
                         break
                     case 'min': //password
                         if (input.value.length < rDetails[1]) {
