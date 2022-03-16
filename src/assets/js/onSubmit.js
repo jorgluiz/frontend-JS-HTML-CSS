@@ -67,7 +67,6 @@ form.addEventListener('submit', async e => {
             location.reload(true)
         })
         .catch(e => {
-            console.log(result)
-            result.innerHTML = e
+            e
         })
 })
