@@ -14,8 +14,8 @@ const showData = (result) => {
     }
 }
 
-cpf.addEventListener("keypress", async (event) => {  // evento "blur" captura o que foi digitado no campo
-    if (event.keyCode === 13)
+cpf.addEventListener("blur", async (event) => {  // evento "blur" captura o que foi digitado no campo
+    // if (event.keyCode === 13)
         if (cpf.value.includes(".") ) {
             search = cpf.value.replace(".", "")
         } else {
