@@ -8,34 +8,26 @@
  
  html,
  body{
+     height: 100vh;
      font-family: sans-serif, "Roboto";
      background-color: #FFF;
      /* width: 100vw; */
      /* height: 100vh; */
  }
  
- form{
-     width: 300px;
-     margin: 150px auto;
-     text-align: center;
- }
- 
- input{
-     display: block;
-     margin: 10px auto;
-     width: 199px;
-     height: 30px;
-     outline: 0;
- }
+ .container-center{
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* border: solid 2px; */
 
- .input{
-    height: 40px;
  }
  
- .border-auth{
+ .container-signup{
+     /* width: 400px; */
      border: solid 1px;
-     margin: auto;
-     width: 400px;
      border-bottom: solid 0;
      border-top: solid 0;
  
@@ -44,8 +36,32 @@
  
      border-left: 2px solid #1C6EA4;
      border-radius: 40px 40px 0px 0px;
+
+     /* border: solid 2px; */
+ }
+
+ .form-validator{
+     margin: 0;
  }
  
+ form{
+    width: 300px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 199px;
+    height: 30px;
+    outline: 0;
+}
+
+.input{
+   height: 40px;
+}
+
  
  .myButton {
      box-shadow: 0px 10px 14px -7px #000000;

@@ -21,7 +21,7 @@ let objValidator = {
             
              body: JSON.stringify({
                  username: formValue.username.value.trim(),
-                 email: formValue.email.value.trim(),
+                 email: formValue.email.value.toLowerCase().trim(),
                  password: formValue.password.value,
                  confirmPassword: formValue.confirmPassword.value
              })

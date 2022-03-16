@@ -19,15 +19,15 @@ body{
 
 
 .content{
-	width: 100vw;
     height: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
     align-items: center;
 }
 
-.border-auth{
-	width: 400px;
+.container-signin{
+	/* width: 400px; */
 	border: solid 1px;
 	border-bottom: solid 0;
 	border-top: solid 0;
@@ -38,7 +38,7 @@ body{
 	border-left: 2px solid #1C6EA4;
     border-radius: 40px 40px 0px 0px;
 
-	z-index: 999;
+	/* z-index: 999; */
 }
 
 
@@ -102,6 +102,10 @@ input{
 	border-left: none;
 	border-right: none;
 	border-color: #1c6ea4;
+}
+
+.margin{
+	margin: 16px 0;
 }
 
 /* label ~ input{
