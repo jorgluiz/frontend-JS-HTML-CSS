@@ -31,7 +31,10 @@ let objValidator = {
                 }, 2000)
                 
             })
-            .catch(err => err)
+            .catch(err => {
+                err
+                alert('senha ou email incorreto')
+            })
 
 
 
