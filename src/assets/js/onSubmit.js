@@ -4,11 +4,11 @@ let form = document.querySelector('.flex-row-form')
 form.addEventListener('submit', async e => {
     e.preventDefault()
 
-    let cpf = document.querySelector('.input-cpf').value
-    let newCPF = cpf.replace(/[^0-9]/g, "")
-    newCPF
-
-
+    const cpfSemString = document.querySelector('.input-cpf').value
+    const cpfComString = JSON.stringify(cpfSemString) 
+    const newCPF = cpfComString.replace(/[^0-9]/g, "")
+    const cpfCrude = newCPF.replace(/\"/g, "")
+    
     const formValue = {
         name: document.querySelector('.input-name'),
         nascimento: document.querySelector('.input-nasc'),
@@ -20,7 +20,7 @@ form.addEventListener('submit', async e => {
         sexo: document.querySelector('.input-sexo'),
         dataemissao: document.querySelector('.input-emissao'),
         rg: document.querySelector('.input-rg'),
-        cpf: newCPF,
+        cpf: cpfCrude,
         cidade: document.querySelector('.input-cidade'),
         uf: document.querySelector('.input-uf'),
         fone: document.querySelector('.input-fone'),
