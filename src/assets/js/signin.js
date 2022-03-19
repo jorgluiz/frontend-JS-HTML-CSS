@@ -26,6 +26,7 @@ let objValidator = {
 
 
 
+                document.querySelector('.email-error').style="display: none"
                 setTimeout(() => {
                     location.href = '/home.html' 
                 }, 2000)
