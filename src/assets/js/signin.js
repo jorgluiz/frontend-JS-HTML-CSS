@@ -26,11 +26,11 @@ let objValidator = {
 
 
 
-                document.querySelector('.email-error').style="display: none"
+                document.querySelector('.email-error').style = "display: none"
                 setTimeout(() => {
-                    location.href = '/home.html' 
+                    location.href = '/home.html'
                 }, 2000)
-                
+
             })
             .catch(error => {
                 if (error.response.status === 409) {
@@ -80,6 +80,7 @@ let objValidator = {
                 switch (rDetails[0]) {
                     case 'required':
                         if (input.value == '') {
+                            document.querySelector('.email-error').textContent = ''
                             return 'este campo é obrigatório'
                         }
                         break
