@@ -57,8 +57,4 @@ const form = {
             })
         })
         location.reload(true)
-        // .then(() =>  location.reload(true))
-        // .then((res) => { JSON.stringify(res) })
-        //    document.querySelector('.reset-form').reset()
-
     })
