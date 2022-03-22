@@ -56,5 +56,5 @@ const form = {
                 descricao: form.descricao.value
             })
         })
-        // location.reload(true)
+        location.reload(true)
     })
