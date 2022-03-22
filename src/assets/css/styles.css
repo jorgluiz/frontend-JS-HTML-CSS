@@ -316,13 +316,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-transition: transform 0.2s 1s;
+/* transition: transform 0.2s 1s; */
 }
 
-.menu-section.on:hover{
+/* .menu-section.on:hover{
 transform: scale(1.5);
 }
-
+ */
 
 .menu-section.on nav{
 display: block;
@@ -335,7 +335,7 @@ top: 15px;
 }
 
 .menu-section.on .menu-toggle .one{
-transform: rotate(45deg) translate(7px, 7px);
+transform: rotate(45deg) translate(7px, 6px);
 }
 
 .menu-section.on .menu-toggle .two{
