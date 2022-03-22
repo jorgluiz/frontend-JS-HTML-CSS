@@ -56,5 +56,6 @@ const form = {
                 descricao: form.descricao.value
             })
         })
+        //page reload
         location.reload(true)
     })
