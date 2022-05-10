@@ -37,7 +37,7 @@ inputBtn.addEventListener("click", async (event) => {  // evento "blur" captura 
 
 
 
-    fetch(`https://backend-flavio.herokuapp.com/prontuarios/buscas/${search}`, options)
+    fetch(`https://backend-api-on.herokuapp.com/prontuarios/buscas/${search}`, options)
         .then(resp => resp.json())
         .then(data => showData(data))
         
