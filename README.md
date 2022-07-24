@@ -41,7 +41,7 @@ User - registration
 
 
 <h3>Deploy Heroku (Frontend)</h3>
-<h5>Publicando projetos HTML, CSS e JavaScript no HEROKU</h5>
+<h5>Subindo projeto no HEROKU</h5>
 <h6>Passos para o deploy...</h6>
 
 <h3>1) Criar um arquivo php, como index e incluir o arquivo html no projeto, fazendo com que ele seja encapsulado:</h3>
